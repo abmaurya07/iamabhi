@@ -1,0 +1,51 @@
+.testimonials {
+    background-color: #fff;
+    padding: 80px 0;
+    text-align: center;
+  
+    h2 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+  
+    .testimonials__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .testimonials__item {
+      margin: 0 20px;
+      text-align: center;
+  
+      .testimonials__image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+      }
+  
+      .testimonials__name {
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+  
+      .testimonials__designation {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-bottom: 10px;
+        color: #888;
+      }
+  
+      .testimonials__quote {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  
