@@ -1,5 +1,5 @@
 import React from 'react';
-import './Services.scss';
+import styles from './module.scss'; // Import the module.scss file
 
 const Services = () => {
   const services = [
@@ -9,11 +9,11 @@ const Services = () => {
   ];
 
   return (
-    <section className="services">
+    <section className={styles.services}>
       <h2>Services</h2>
-      <div className="services__list">
+      <div className={styles['services__list']}>
         {services.map((service) => (
-          <div key={service.id} className="services__item">
+          <div key={service.id} className={styles['services__item']}>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
           </div>

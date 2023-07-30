@@ -1,5 +1,5 @@
 import React from 'react';
-import './Portfolio.scss';
+import styles from './module.scss'; // Import the module.scss file
 
 const Portfolio = () => {
   const portfolioItems = [
@@ -9,11 +9,11 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="portfolio">
+    <section className={styles.portfolio}>
       <h2>Portfolio</h2>
-      <div className="portfolio__grid">
+      <div className={styles['portfolio__grid']}>
         {portfolioItems.map((item) => (
-          <div key={item.id} className="portfolio__item">
+          <div key={item.id} className={styles['portfolio__item']}>
             <h3>{item.title}</h3>
             <p>{item.description}</p>
           </div>

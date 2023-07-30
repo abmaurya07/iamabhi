@@ -1,15 +1,36 @@
 import React from 'react';
-import './Navigation.scss';
+import { Link } from 'react-scroll';
+import styles from './module.scss'; // Import the module.css file
 
 const Navigation = () => {
   return (
-    <nav className="navigation">
-      <ul className="navigation__list">
-        <li className="navigation__item"><a href="#home">Home</a></li>
-        <li className="navigation__item"><a href="#about">About</a></li>
-        <li className="navigation__item"><a href="#portfolio">Portfolio</a></li>
-        <li className="navigation__item"><a href="#services">Services</a></li>
-        <li className="navigation__item"><a href="#contact">Contact</a></li>
+    <nav className={styles.navigation}>
+      <ul className={styles['navigation__list']}>
+        <li className={styles['navigation__item']}>
+          <Link to="hero" smooth={true} duration={1000}>
+            Home
+          </Link>
+        </li>
+        <li className={styles['navigation__item']}>
+          <Link to="about" smooth={true} duration={1000}>
+            About
+          </Link>
+        </li>
+        <li className={styles['navigation__item']}>
+          <Link to="portfolio" smooth={true} duration={1000}>
+            Portfolio
+          </Link>
+        </li>
+        <li className={styles['navigation__item']}>
+          <Link to="services" smooth={true} duration={1000}>
+            Services
+          </Link>
+        </li>
+        <li className={styles['navigation__item']}>
+          <Link to="contact" smooth={true} duration={1000}>
+            Contact
+          </Link>
+        </li>
       </ul>
     </nav>
   );

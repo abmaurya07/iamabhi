@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './Layout';
-import About from './About';
-import NotFound from './NotFound';
-import { Link } from 'react-scroll';
-import Portfolio from './Portfolio'
+import {
+  Layout,
+  Hero
+} from './Components'
+
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
@@ -33,29 +34,33 @@ function App() {
 
   return (
     <Router>
-      <Layout>
-        {/* Main content */}
-        <Routes>
-          <Route path="/" element={<About />} />
-          {/* Add more Route components for other sections */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
 
-        {/* Sections */}
-        <section data-section="about" id="about">
-        <About />
-        </section>
-        <section data-section="portfolio" id="portfolio">
-        <Portfolio />
-        </section>
-        <section data-section="hero" id="hero">
-        <About />
-        </section>
-        <section data-section="about" id="about">
-        <About />
-        </section>
-        {/* Add more sections with corresponding IDs and data-section attributes */}
-      </Layout>
+          <Layout>
+
+            {/* Sections */}
+            
+         <section data-section="hero" id="hero">
+              <Hero />
+            </section>
+           {/*
+            <section data-section="about" id="about">
+              <About />
+            </section>
+            <section data-section="services" id="services">
+              <Services />
+            </section>
+            <section data-section="portfolio" id="portfolio">
+              <Portfolio />
+            </section>
+            <section data-section="contact" id="contact">
+              <Contact />
+            </section>
+            <section data-section="testimonials" id="testimonials">
+              <Testimonials />
+            </section>  */}
+            {/* Add more sections with corresponding IDs and data-section attributes */}
+          </Layout>
+
     </Router>
   );
 }
