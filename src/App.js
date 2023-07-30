@@ -4,6 +4,7 @@ import Layout from './Layout';
 import About from './About';
 import NotFound from './NotFound';
 import { Link } from 'react-scroll';
+import Portfolio from './Portfolio'
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
