@@ -1,17 +1,25 @@
 .layout {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  display: flex;
+  width: 100%;
+}
 
-  .content {
-    margin-top: 40px;
-  }
+.layout__left-panel {
+  width: 300px;
+  background-color: #f8f8f8;
+}
 
-  .footer {
-    margin-top: 40px;
-    padding: 20px 0;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-  }
+.layout__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.layout__main-content {
+  flex: 1;
+}
+
+.layout__navigation {
+  width: 300px;
+  background-color: #f8f8f8;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Testimonials.scss';
+import styles from './module.scss'; // Import the module.scss file
 
 const Testimonials = () => {
   const testimonials = [
@@ -9,11 +9,11 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="testimonials">
+    <section className={styles.testimonials}>
       <h2>Testimonials</h2>
-      <div className="testimonials__list">
+      <div className={styles['testimonials__list']}>
         {testimonials.map((testimonial) => (
-          <div key={testimonial.id} className="testimonials__item">
+          <div key={testimonial.id} className={styles['testimonials__item']}>
             <blockquote>{testimonial.quote}</blockquote>
             <cite>{testimonial.author}</cite>
           </div>
