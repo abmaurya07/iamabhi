@@ -5,5 +5,5 @@ Languages: JavaScript, Node.JS, Python, HTML, CSS, TypeScript
 Frameworks and Libraries: Next JS, React, Bootstrap
 Databases and Tools: MySQL, MongoDB, Firebase, Git, GitHub, VS Code, AWS, Kubernetes, Docker
 
-<span style="background-color: yellow;">Note: This should not be edited or modified, as they are required for the proper functioning of the application.</span>
+<kbd>Note: This should not be edited or modified, as they are required for the proper functioning of the application.</kbd>
 
