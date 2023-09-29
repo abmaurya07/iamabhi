@@ -4,6 +4,3 @@ Skills
 Languages: JavaScript, Node.JS, Python, HTML, CSS, TypeScript
 Frameworks and Libraries: Next JS, React, Bootstrap
 Databases and Tools: MySQL, MongoDB, Firebase, Git, GitHub, VS Code, AWS, Kubernetes, Docker
-
-<p background= 'red'>Note: This should not be edited or modified, as they are required for the proper functioning of the application.</p>
-
